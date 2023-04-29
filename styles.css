@@ -1,0 +1,255 @@
+/* Reset styles */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styles */
+body {
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+main {
+    width: 960px;
+    margin: 20px 0;
+    background-color: #f3f7f9;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    text-align: center;
+    background: linear-gradient(45deg, #05fa1d, #068a13);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 48px;
+}
+
+/* Sections */
+section {
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    border-bottom: 3px solid #068a13;
+    padding-bottom: 10px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Forms */
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+form label {
+    flex: 1;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+form input[type="number"] {
+    flex: 2;
+    padding: 10px;
+    border: 2px solid #4ca1af;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f3f7f9;
+    color: #333;
+}
+
+form button {
+    flex: 1;
+    background: linear-gradient(45deg, #05fa1d, #068a13);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background: linear-gradient(45deg, #05fa1d, #068a13);
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+ul li {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #4ca1af;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+
+th:first-child {
+  border-radius: 10px 0 0 0;
+}
+
+th:last-child {
+  border-radius: 0 10px 0 0;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+td:first-child {
+  border-radius: 0 10px 0 0;
+}
+
+td:last-child {
+  border-radius: 0 0 10px 0;
+}
+
+tbody tr:last-child td:first-child {
+  border-radius: 0 0 0 10px;
+}
+
+tbody tr:last-child td:last-child {
+  border-radius: 0 0 10px 0;
+}
+
+
+/* General link styles */
+a {
+    color: #4ca1af;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #2c3e50;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #4ca1af;
+    color: #fff;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    main {
+        width: 100%;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    form label,
+    form input[type="number"],
+    form button {
+        flex: none;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* Metamask error message */
+#error-message {
+    color: #c0392b;
+    font-weight: bold;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Success message */
+#success-message {
+    color: #2ecc71;
+    font-weight: bold;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Show/hide messages */
+.show-message {
+    display: block !important;
+}
